@@ -7,38 +7,45 @@ public class ConcreteHouseBuilder2 implements HouseBuilder {
     }
 
     @Override
-    public void buildWindows() {
+    public HouseBuilder buildWindows() {
         house.setNumberOfWindows(4);
+        return this;
     }
 
     @Override
-    public void buildDoors() {
+    public HouseBuilder buildDoors() {
         house.setNumberOfDoors(2);
+        return this;
     }
 
     @Override
-    public void buildRooms() {
+    public HouseBuilder buildRooms() {
         house.setNumberOfRooms(4);
+        return this;
     }
 
     @Override
-    public void buildGarage() {
+    public HouseBuilder buildGarage() {
         house.setHasGarage(true);
+        return this;
     }
 
     @Override
-    public void buildSwimPool() {
+    public HouseBuilder buildSwimPool() {
         house.setHasSwimPool(true);
+        return this;
     }
 
     @Override
-    public void buildStatues() {
+    public HouseBuilder buildStatues() {
         house.setHasStatues(true);
+        return this;
     }
 
     @Override
-    public void buildGarden() {
+    public HouseBuilder buildGarden() {
         house.setHasGarden(true);
+        return this;
     }
 
     @Override

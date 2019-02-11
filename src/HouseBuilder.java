@@ -1,10 +1,10 @@
 public interface HouseBuilder {
-    void buildWindows();
-    void buildDoors();
-    void buildRooms();
-    void buildGarage();
-    void buildSwimPool();
-    void buildStatues();
-    void buildGarden();
+    HouseBuilder buildWindows();
+    HouseBuilder buildDoors();
+    HouseBuilder buildRooms();
+    HouseBuilder buildGarage();
+    HouseBuilder buildSwimPool();
+    HouseBuilder buildStatues();
+    HouseBuilder buildGarden();
     House getHouse();
 }

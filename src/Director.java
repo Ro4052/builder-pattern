@@ -7,13 +7,14 @@ public class Director {
     }
 
     public void constructHouse() {
-        houseBuilder.buildWindows();
-        houseBuilder.buildDoors();
-        houseBuilder.buildRooms();
-        houseBuilder.buildGarage();
-        houseBuilder.buildSwimPool();
-        houseBuilder.buildStatues();
-        houseBuilder.buildGarden();
+        houseBuilder
+            .buildWindows()
+            .buildDoors()
+            .buildRooms()
+            .buildGarage()
+            .buildSwimPool()
+            .buildStatues()
+            .buildGarden();
     }
 
     public House getHouse() {
