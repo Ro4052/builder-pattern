@@ -2,10 +2,14 @@ public class Main {
 
     public static void main(String[] args) {
         // House with 4 windows, 2 doors, 4 rooms and a garage
-        House house1 = new House(4, 2, 4, true, false, false, false);
+        Director director1 = new Director(new ConcreteHouseBuilder1());
+        director1.constructHouse();
+        House house1 = director1.getHouse();
 
         // House with 4 windows, 2 doors, 4 rooms, a garage, a pool, statues and a garden
-        House house2 = new House(4, 2, 4, true, true, true, true);
+        Director director2 = new Director(new ConcreteHouseBuilder2());
+        director2.constructHouse();
+        House house2 = director2.getHouse();
 
         System.out.println("<<<< House 1 >>>>");
         System.out.println("Number of windows: " + house1.getNumberOfWindows());
